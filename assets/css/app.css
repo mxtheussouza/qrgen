@@ -1,0 +1,7 @@
+@import './libs/all.min.css';
+@import './libs/toastr.min.css';
+@import './app/reset.css';
+@import './app/base.css';
+@import './app/responsive.css';
+@import './app/qr-form.css';
+@import './app/qrcode.css';

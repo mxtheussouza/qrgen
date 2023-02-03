@@ -1,0 +1,133 @@
+.qr-form {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-checkbox {
+    display: none;
+}
+
+.qr-checkbox:checked + .qr-form-container .qr-form-content {
+    width: 37.5em;
+}
+
+.qr-checkbox:checked + .qr-form-container .qr-form-content-toggle {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.7);
+}
+
+.qr-checkbox:checked + .qr-form-container .qr-form-content-input, .qr-checkbox:checked + .qr-form-container .qr-form-content-button-label {
+    transition: 0.2s 0.1s;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.qr-checkbox:not(:checked) + .qr-form-container .qr-form-content-input:required:valid ~ .qr-form-content-toggle {
+    pointer-events: none;
+    cursor: default;
+}
+
+.qr-form-container, .qr-form-content, .qr-form-content-toggle {
+    width: 20em;
+    height: 6.25em;
+}
+
+.qr-form-container {
+    position: relative;
+    font-weight: 700;
+}
+
+.qr-form-content, .qr-form-content-toggle {
+    position: absolute;
+    border-radius: 6.25em;
+    background-color: #fff;
+    transition: 0.2s;
+}
+
+.qr-form-content {
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.625em;
+    box-sizing: border-box;
+    box-shadow: 0 0.125em 0.3125em rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.qr-form-content-toggle {
+    color: #161c27;
+    top: 0;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-form-content-toggle::before {
+    font-size: 1.75em;
+    content: attr(data-title);
+}
+
+.qr-form-content-input, .qr-form-content-button {
+    font: inherit;
+    border: 0;
+    outline: 0;
+    border-radius: 5em;
+    box-sizing: border-box;
+}
+
+.qr-form-content-input, .qr-form-content-button-label {
+    font-size: 1.75em;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.7);
+    transition: 0s;
+}
+
+.qr-form-content-input {
+    color: #161c27;
+    height: 100%;
+    width: 100%;
+    padding: 0 0.714em;
+}
+
+.qr-form-content-input::placeholder {
+    color: currentColor;
+}
+
+.qr-form-content-input:required:valid {
+    color: #161c27;
+}
+
+.qr-form-content-input:required:valid + .qr-form-content-button-label {
+    color: #fff;
+}
+
+.qr-form-content-button-label {
+    color: #fff;
+    height: 100%;
+    width: auto;
+}
+
+.qr-form-content-button-label::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.qr-form-content-button {
+    color: inherit;
+    padding: 0;
+    height: 100%;
+    width: 5em;
+    background-color: #161c27;
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+@media (max-width: 500px){
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .qr-form {
+        width: 100% !important;
+    }
+
+    .qr-checkbox:checked + .qr-form-container .qr-form-content {
+        width: 28.5em !important;
+    }
+}

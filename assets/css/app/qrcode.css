@@ -1,0 +1,13 @@
+.qrcode-container {
+    display: none;
+}
+
+.qrcode-container-show {
+    display: flex;
+    justify-content: center;
+}
+
+#qrcode {
+    border: 4px solid #fff;
+    margin-top: 4rem;
+}
