@@ -14,9 +14,6 @@
     <a>
         <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000">
     </a>
-    <a>
-        <img src="https://img.shields.io/badge/status-active-success.svg">
-    </a>
     <a href="https://github.com/matheusdearaujo/qrgen/issues">
         <img src="https://img.shields.io/github/issues/matheusdearaujo/qrgen">
     </a>
