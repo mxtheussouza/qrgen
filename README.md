@@ -4,7 +4,7 @@
  </a>
 </p>
 
-<h1 align="center">QR Gen</h1>
+<h1 align="center">QRgen</h1>
 
 <p align="center">
   A generate QR Code created in a didactic way for friends who are starting in programming.
