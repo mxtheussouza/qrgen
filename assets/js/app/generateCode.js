@@ -20,5 +20,7 @@ export function generateCode() {
 
 		qrCodeContainer.classList.remove("qrcode-container");
 		qrCodeContainer.classList.add("qrcode-container-show");
+
+		toastr.success("QR Code generated!");
 	});
 }
