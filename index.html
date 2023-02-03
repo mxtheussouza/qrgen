@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- TITLE -->
+    <title>QR Gen</title>
+
+    <!-- ICON -->
+    <link rel="icon" href="./assets/images/favicon.png">
+
+    <!-- META TAGS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="QRGen is a QR code generator.">
+    <meta name="keywords" content="qrcode, qr, generator, generate, qrgen">
+    <meta name="author" content="Matheus Souza">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/app.css">
+
+    <!-- LIBS -->
+    <script src="./assets/js/libs/jquery.min.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div id="qrcode-container" class="qrcode-container">
+            <div id="qrcode"></div>
+        </div>
+        <div class="container">
+            <div class="qr-form">
+                <input class="qr-checkbox" type="checkbox" id="checkbox">
+                <div class="qr-form-container">
+                  <form class="qr-form-content">
+                    <input class="qr-form-content-input" placeholder="Paste your url to generate QR" type="url" required>
+                    <label class="qr-form-content-button-label" for="checkbox">
+                      <button class="qr-form-content-button" type="submit">Gen</button>
+                    </label>
+                    <label class="qr-form-content-toggle" for="checkbox" data-title="QR GEN"></label>
+                  </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script type="module" src="./assets/js/app.js"></script>
+    <script src="./assets/js/libs/all.min.js"></script>
+    <script src="./assets/js/libs/qrcode.min.js"></script>
+    <script src="./assets/js/libs/toastr.min.js"></script>
+</body>
+</html>
